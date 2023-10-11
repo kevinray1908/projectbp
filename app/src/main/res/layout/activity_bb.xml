@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context=".MenuActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Berat dan Tinggi Badan"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/images" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:id="@+id/textviewnama"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="103dp"
+            android:layout_height="42dp"
+            android:id="@+id/EditTextnama"
+            android:ems="10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewumur"
+            android:text="Umur"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="103dp"
+            android:layout_height="42dp"
+            android:id="@+id/editTextumur"
+            android:ems="10"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTinggi"
+            android:text="Tinggi Badan"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="103dp"
+            android:layout_height="42dp"
+            android:id="@+id/editTextTinggiBadan"
+            android:ems="10"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewBB"
+            android:text="Berat Badan (kg)"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:layout_width="103dp"
+            android:layout_height="42dp"
+            android:id="@+id/editTextBeratBadan"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#2196F3"
+            android:text="SUBMIT"
+            android:translationY="25dp" />
+
+        <TextView
+            android:id="@+id/textviewhasil"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+</ScrollView>

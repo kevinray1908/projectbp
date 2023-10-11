@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/text_view_namaapk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pencatatan Perkembangan Anak"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="23sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/black"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="169dp"
+            android:layout_height="165dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_below="@+id/text_view_namaapk"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="80dp"
+            android:id="@+id/card_view_bb">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_view_bb"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ukur" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Berat dan Tinggi Badan Balita"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/text_view_bb"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="169dp"
+            android:layout_height="165dp"
+            android:layout_centerHorizontal="false"
+            android:layout_toEndOf="@+id/card_view_bb"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_below="@id/text_view_namaapk"
+            android:id="@+id/card_view_makanan">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/suhu"
+                    android:id="@+id/image_view_makanan"/>
+
+                <TextView
+                    android:id="@+id/text_view_makanan"
+                    android:layout_width="166dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:text="Suhu Balita"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="169dp"
+            android:layout_height="145dp"
+            android:layout_centerHorizontal="false"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_below="@id/card_view_bb"
+            android:layout_marginTop="50dp"
+            android:id="@+id/card_view_monitoring">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sakit"
+                    android:id="@+id/image_view_sakit"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Monitoring"
+                    android:textSize="20dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/text_view_sakit"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_tips"
+            android:layout_width="169dp"
+            android:layout_height="145dp"
+            android:layout_below="@+id/card_view_makanan"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/card_view_monitoring">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_view_tips"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/images" />
+
+                <TextView
+                    android:id="@+id/text_view_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="serif"
+                    android:text="Tips dan Trik"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_view_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_below="@id/card_view_monitoring"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="90dp"
+        android:textStyle="bold"
+        android:layout_marginTop="184dp"
+        android:fontFamily="cursive"
+        android:text="Alamat"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/text_view_hubungi"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/card_view_tips"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="184dp"
+        android:layout_toEndOf="@+id/text_view_lokasi"
+        android:fontFamily="cursive"
+        android:text="Hubungi Kami"
+        android:textSize="10pt" />
+    </RelativeLayout>
