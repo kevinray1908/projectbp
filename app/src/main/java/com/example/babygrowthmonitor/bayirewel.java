@@ -34,7 +34,6 @@ public class bayirewel extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 Item item = itemArrayAdapter.getItem(position);}
         });
-
         Button btnback = findViewById(R.id.btnbackrewel);
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override

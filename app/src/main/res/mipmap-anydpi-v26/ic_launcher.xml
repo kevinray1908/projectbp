@@ -2,5 +2,5 @@
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@drawable/bayi" />
     <foreground android:drawable="@drawable/bayi" />
-    <monochrome android:drawable="@drawable/logoapp__1_" />
+    <monochrome android:drawable="@drawable/bayi" />
 </adaptive-icon>
