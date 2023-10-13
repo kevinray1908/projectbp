@@ -43,7 +43,7 @@ public class HubungiActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent launchEmailAppIntent = new Intent(Intent.ACTION_SENDTO);
-                launchEmailAppIntent.setData(Uri.parse("mailto:santaprasa@gmail.com"));
+                launchEmailAppIntent.setData(Uri.parse("mailto:kondisisibayi@gmail.com"));
                 startActivity(launchEmailAppIntent);
             }
         });
@@ -51,7 +51,7 @@ public class HubungiActivity extends AppCompatActivity {
         cardViewwa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String phoneNumber = "+62895805106666"; // Replace this with the recipient's phone number
+                String phoneNumber = "+62895805106666";// Replace this with the recipient's phone number
                 String message = "Hello, this is my message."; // Replace this with the message you want to send
 
                 try {
