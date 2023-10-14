@@ -1,13 +1,17 @@
 package com.example.babygrowthmonitor;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ProgressBar progressBar;
+    private Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,15 +20,21 @@ public class MainActivity extends AppCompatActivity {
 
         clearSharedPreferences();
 
-        Button button = findViewById(R.id.button);
+        progressBar = findViewById(R.id.progressbar);
+        progressBar.setVisibility(View.VISIBLE); // Initially set ProgressBar to VISIBLE
 
-        button.setOnClickListener(new View.OnClickListener() {
+        handler = new Handler();
+
+        // Delay starting the new activity for 1.5 seconds (1500 milliseconds)
+        handler.postDelayed(new Runnable() {
             @Override
-            public void onClick(View view) {
-                Intent MenuIntent = new Intent(MainActivity.this, MenuActivity.class);
-                startActivity(MenuIntent);
+            public void run() {
+                progressBar.setVisibility(View.GONE); // Hide ProgressBar after the delay
+                Intent menuIntent = new Intent(MainActivity.this, MenuActivity.class);
+                startActivity(menuIntent);
+                finish(); // Finish the current activity so the user can't navigate back
             }
-        });
+        }, 2000); // Delayed for 1.5 seconds (1500 milliseconds)
     }
 
     private void clearSharedPreferences() {

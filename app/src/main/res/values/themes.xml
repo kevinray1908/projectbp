@@ -4,6 +4,5 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/Hijau</item>
     </style>
-
     <style name="Theme.Babygrowthmonitor" parent="Base.Theme.Babygrowthmonitor" />
 </resources>
