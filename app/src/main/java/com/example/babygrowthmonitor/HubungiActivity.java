@@ -47,8 +47,8 @@ public class HubungiActivity extends AppCompatActivity {
                 startActivity(launchEmailAppIntent);
             }
         });
-        CardView cardView = findViewById(R.id.cardview_hubungi_wa);
-        cardView.setOnClickListener(new View.OnClickListener() {
+        CardView cardViewwa = findViewById(R.id.cardview_hubungi_wa);
+        cardViewwa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String phoneNumber = "+62895805106666";
