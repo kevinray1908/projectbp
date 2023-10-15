@@ -42,7 +42,7 @@ public class dataActivity extends AppCompatActivity {
         dataumur.setText("Umur : " + DU + " tahun");
         datatinggibadan.setText("Tinggi Badan : " + DTB + " cm");
         databeratbadan.setText("Berat Badan : " + DBB + " kg");
-        datasuhu.setText("Suhu : " + DS + " C");
+        datasuhu.setText("Suhu : " + DS + " °C");
 
         // Check and set dataStatus based on temperature
         double suhu = 0.0;

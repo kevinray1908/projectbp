@@ -64,7 +64,7 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent launchermap = new Intent(Intent.ACTION_VIEW);
                 launchermap.setData(Uri.parse
-                        ("geo:-7.273946852840151, 112.79371116759155?q=Politeknik+Elektronika+Negeri+Surabaya"));
+                            ("geo:-7.273946852840151, 112.79371116759155?q=Rumah Sakit"));
                 startActivity(launchermap);
             }
         });

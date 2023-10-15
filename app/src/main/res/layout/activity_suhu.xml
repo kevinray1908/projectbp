@@ -27,6 +27,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:id="@+id/edit_text_suhu"
+            android:inputType="number"
             android:layout_margin="30dp"
             android:textAlignment="center"/>
         <Button
